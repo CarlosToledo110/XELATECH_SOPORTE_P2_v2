@@ -7,15 +7,14 @@ namespace XELATECH_SOPORTE_P2
 {
     public class GestorCarga
     {
-        private SistemaXelaTech sistema;
+        private SistemaXT sistema;
         private string[] dias = { "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo" };
 
-        public GestorCarga(SistemaXelaTech sistema)
+        public GestorCarga(SistemaXT sistema)
         {
             this.sistema = sistema;
         }
 
-        // Convierte el día de la semana de una fecha en la columna de la matriz (lunes = 0).
         private int ObtenerColumna(DateTime fecha)
         {
             DayOfWeek dia = fecha.DayOfWeek;
@@ -81,7 +80,6 @@ namespace XELATECH_SOPORTE_P2
             }
         }
 
-        // Recorre toda la matriz para encontrar la posición con el valor más alto.
         public void MostrarMayorCarga()
         {
             int mayor = 0;
@@ -89,7 +87,7 @@ namespace XELATECH_SOPORTE_P2
             int columnaMayor = -1;
             for (int i = 0; i < sistema.Tecnicos.Count; i++)
             {
-                for (int j = 0; j < SistemaXelaTech.DIAS; j++)
+                for (int j = 0; j < SistemaXT.DIAS; j++)
                 {
                     if (sistema.Carga[i, j] > mayor)
                     {

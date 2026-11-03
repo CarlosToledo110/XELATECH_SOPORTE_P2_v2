@@ -7,9 +7,9 @@ namespace XELATECH_SOPORTE_P2
 {
     public class GestorRegistros
     {
-        private SistemaXelaTech sistema;
+        private SistemaXT sistema;
 
-        public GestorRegistros(SistemaXelaTech sistema) { this.sistema = sistema; }
+        public GestorRegistros(SistemaXT sistema) { this.sistema = sistema; }
 
         public void RegistrarCliente(Cliente cliente)
         {

@@ -7,11 +7,11 @@ namespace XELATECH_SOPORTE_P2
 {
     public class GestorSolicitudes
     {
-        private SistemaXelaTech sistema;
+        private SistemaXT sistema;
         private GestorRegistros gestorRegistros;
         private GestorCarga gestorCarga;
 
-        public GestorSolicitudes(SistemaXelaTech sistema, GestorRegistros gestorRegistros, GestorCarga gestorCarga)
+        public GestorSolicitudes(SistemaXT sistema, GestorRegistros gestorRegistros, GestorCarga gestorCarga)
         {
             this.sistema = sistema;
             this.gestorRegistros = gestorRegistros;
