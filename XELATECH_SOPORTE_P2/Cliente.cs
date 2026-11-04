@@ -4,7 +4,7 @@ using System.Text;
 
 namespace XELATECH_SOPORTE_P2
 {
-        class Cliente : Persona
+        public class Cliente : Persona
         {
             protected string telefono;
             protected string correo;

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace XELATECH_SOPORTE_P2
 {
-    class Persona
+    public class Persona
     {
         protected string codigo;
         protected string nombreCompleto;
