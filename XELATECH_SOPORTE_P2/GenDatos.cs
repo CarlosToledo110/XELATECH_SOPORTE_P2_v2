@@ -19,7 +19,7 @@ namespace XELATECH_SOPORTE_P2
         private string[] categorias = { "Memoria", "Batería", "Pantalla", "Cargador", "Cabezal", "Fuente" };
         private string[] problemas = { "No enciende", "Funciona muy lento", "Se sobrecalienta", "No imprime", "Pantalla dañada" };
 
-        public GeneradorDatos(SistemaXelaTech sistema, GestorRegistros gestorRegistros, GestorSolicitudes gestorSolicitudes)
+        public GeneradorDatos(SistemaXT sistema, GestorRegistros gestorRegistros, GestorSolicitudes gestorSolicitudes)
         {
             this.sistema = sistema;
             this.gestorRegistros = gestorRegistros;

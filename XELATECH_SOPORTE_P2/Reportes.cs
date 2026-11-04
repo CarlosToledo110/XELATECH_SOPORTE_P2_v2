@@ -147,12 +147,12 @@ namespace XELATECH_SOPORTE_P2
                     {
                         if (solicitud.Equipo.ObtenerTipo() == tipos[k])
                         {
-                            cantidades[k];
+                            cantidades[k]++;
                         }
                     }
                 }
             }
-            for (int k = 0; k < tipos.Length; k)
+            for (int k = 0; k < tipos.Length; k++)
             {
                 Console.WriteLine(tipos[k] + ": " + cantidades[k]);
             }

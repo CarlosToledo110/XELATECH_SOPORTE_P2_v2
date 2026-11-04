@@ -64,7 +64,7 @@ namespace XELATECH_SOPORTE_P2
                 return;
             }
             Console.Write("Técnico\t\t");
-            for (int j = 0; j < SistemaXelaTech.DIAS; j++)
+            for (int j = 0; j < SistemaXT.DIAS; j++)
             {
                 Console.Write(dias[j].Substring(0, 3) + "\t");
             }
@@ -72,7 +72,7 @@ namespace XELATECH_SOPORTE_P2
             for (int i = 0; i < sistema.Tecnicos.Count; i++)
             {
                 Console.Write(sistema.Tecnicos[i].Codigo + "\t");
-                for (int j = 0; j < SistemaXelaTech.DIAS; j++)
+                for (int j = 0; j < SistemaXT.DIAS; j++)
                 {
                     Console.Write(sistema.Carga[i, j] + "\t");
                 }
