@@ -4,8 +4,10 @@ using System.Text;
 
 namespace XELATECH_SOPORTE_P2
 {
-    internal class ValidadorExcep
+    public class ValidacionException : Exception
     {
-        
+        public ValidacionException(string mensaje) : base(mensaje)
+        {
+        }
     }
 }
